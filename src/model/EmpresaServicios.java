@@ -1,9 +1,11 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EmpresaServicios {
 
-	private List<Cliente> client;
+	private ArrayList<Cliente> clientes= new ArrayList<>() {};
+
 
 }
