@@ -13,9 +13,19 @@ public class Cliente {
 	private String phone;
 	private String email;
 
+	private Servicios[] servicios;
+
 	public Cliente(String name, String id) {
 		this.name = name;
 		this.id = id;
+	}
+
+	public Servicios[] getServicios() {
+		return servicios;
+	}
+
+	public void setServicios(Servicios[] servicios) {
+		this.servicios = servicios;
 	}
 
 	public Estado getEstado() {
