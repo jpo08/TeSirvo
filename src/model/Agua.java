@@ -6,6 +6,11 @@ public class Agua extends Servicios {
 	private int contadorValue;
 	private int contadorValuePast;
 
+	public Agua(String codigoContrato) {
+		super(codigoContrato);
+	}
+
+
 	public String getMedidorCode() {
 		return medidorCode;
 	}

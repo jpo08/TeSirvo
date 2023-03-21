@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Cliente {
 
-	Estado estado;
+	private Estado estado;
 	private String name;
 	private String id;
 	private Date date;

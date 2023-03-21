@@ -6,6 +6,11 @@ public class Gas extends Servicios {
 	private int contadorValue;
 	private int contadorValuePast;
 
+	public Gas(String codigoContrato) {
+		super(codigoContrato);
+	}
+
+
 	public String getMedidorCode() {
 		return medidorCode;
 	}

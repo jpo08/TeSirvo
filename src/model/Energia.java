@@ -6,6 +6,11 @@ public class Energia extends Servicios {
 	private int contadorValue;
 	private int contadorValuePast;
 
+	public Energia(String codigoContrato) {
+		super(codigoContrato);
+	}
+
+
 	public String getMedidorCode() {
 		return medidorCode;
 	}
