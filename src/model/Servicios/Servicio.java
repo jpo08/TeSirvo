@@ -1,8 +1,8 @@
-package model;
+package model.Servicios;
 
 import java.util.Date;
 
-public class Servicios {
+public class Servicio {
 
 	private String codigoContrato;
 	private String direccionInstalacion;
@@ -10,8 +10,12 @@ public class Servicios {
 	private Date dateFactura;
 	private boolean estadoActivo;
 
-	public Servicios(String codigoContrato) {
+	public Servicio(String codigoContrato, String direccionInstalacion, Date dateInstalacion, Date dateFactura, boolean estadoActivo) {
 		this.codigoContrato = codigoContrato;
+		this.direccionInstalacion = direccionInstalacion;
+		this.dateInstalacion = dateInstalacion;
+		this.dateFactura = dateFactura;
+		this.estadoActivo = estadoActivo;
 	}
 
 	public String getCodigoContrato() {

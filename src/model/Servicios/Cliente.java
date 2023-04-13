@@ -1,4 +1,4 @@
-package model;
+package model.Servicios;
 
 import java.util.Date;
 
@@ -13,18 +13,18 @@ public class Cliente {
 	private String phone;
 	private String email;
 
-	private Servicios[] servicios;
+	private Servicio[] servicios;
 
 	public Cliente(String name, String id) {
 		this.name = name;
 		this.id = id;
 	}
 
-	public Servicios[] getServicios() {
+	public Servicio[] getServicios() {
 		return servicios;
 	}
 
-	public void setServicios(Servicios[] servicios) {
+	public void setServicios(Servicio[] servicios) {
 		this.servicios = servicios;
 	}
 
