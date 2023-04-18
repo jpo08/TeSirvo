@@ -17,7 +17,7 @@ public class CtrlCliente {
 		sc = new Scanner(System.in);
 	}
 
-	public void addClient(Estado estado, String name, String id, String code, String direccion, String phone, String email){
+	public void addClient(int estado, String name, String id, String code, String direccion, String phone, String email){
 
 		empresa.clientes.add(new Cliente( estado, name,  id, code,  direccion,  phone,  email));
 

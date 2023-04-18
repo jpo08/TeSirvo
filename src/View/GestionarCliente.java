@@ -30,7 +30,7 @@ public class GestionarCliente {
         String phone = sc.next();
 
         System.out.println("Estado");
-        Estado estado = sc.nextInt();
+        int estado = sc.nextInt();
 
         ctrlCliente.addClient(estado, name,  id , code,  direccion,  phone,  email);
 

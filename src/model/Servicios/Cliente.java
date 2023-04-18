@@ -17,8 +17,8 @@ public class Cliente {
 
 	private List<Servicio> servicios;
 
-	public Cliente(Estado estado, String name, String id, String code, String direccion, String phone, String email) {
-		this.estado = estado;
+	public Cliente(int estado, String name, String id, String code, String direccion, String phone, String email) {
+
 		this.name = name;
 		this.id = id;
 
@@ -27,6 +27,7 @@ public class Cliente {
 		this.phone = phone;
 		this.email = email;
 		servicios=new ArrayList<Servicio>();
+
 	}
 
 	public void addService(Servicio servicio){
