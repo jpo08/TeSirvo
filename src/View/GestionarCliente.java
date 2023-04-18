@@ -11,12 +11,12 @@ public class GestionarCliente {
         Scanner sc = new Scanner(System.in);
         CtrlCliente ctrlCliente = new CtrlCliente();
 
-        System.out.println("digite los datos del cliente:");
-        System.out.println("nombre:");
+        System.out.println("Digite los datos del cliente:\n");
+        System.out.println("Nombre:");
         String name= sc.nextLine();
         System.out.println("ID");
         String id= sc.nextLine();
-        System.out.println("codigo");
+        System.out.println("Codigo");
         String code = sc.nextLine();
 
 

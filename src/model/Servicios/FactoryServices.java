@@ -1,4 +1,4 @@
-package model;
+package model.Servicios;
 
 import model.Servicios.*;
 import model.Servicios.Cliente;
