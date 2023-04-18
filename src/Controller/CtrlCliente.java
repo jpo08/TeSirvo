@@ -2,7 +2,9 @@ package Controller;
 
 import model.Servicios.Cliente;
 import model.Servicios.EmpresaServicios;
+import model.Servicios.Estado;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class CtrlCliente {
@@ -13,6 +15,12 @@ public class CtrlCliente {
 	public CtrlCliente(){
 		empresa = new EmpresaServicios();
 		sc = new Scanner(System.in);
+	}
+
+	public void addClient(Estado estado, String name, String id, String code, String direccion, String phone, String email){
+
+		empresa.clientes.add(new Cliente( estado, name,  id, code,  direccion,  phone,  email));
+
 	}
 
 

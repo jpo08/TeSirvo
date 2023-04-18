@@ -1,6 +1,7 @@
 package View;
 
 import Controller.CtrlCliente;
+import model.Servicios.Estado;
 
 import java.util.Scanner;
 
@@ -15,8 +16,23 @@ public class GestionarCliente {
         String name= sc.nextLine();
         System.out.println("ID");
         String id= sc.nextLine();
+        System.out.println("codigo");
+        String code = sc.nextLine();
 
-        ctrlCliente.addClient(name,id);
+
+        System.out.println("Direccion");
+        String direccion = sc.next();
+
+        System.out.println("Correo Electronico");
+        String email = sc.next();
+
+        System.out.println("Telefono");
+        String phone = sc.next();
+
+        System.out.println("Estado");
+        Estado estado = sc.nextInt();
+
+        ctrlCliente.addClient(estado, name,  id , code,  direccion,  phone,  email);
 
 
 

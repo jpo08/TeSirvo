@@ -1,6 +1,8 @@
 package model.Servicios;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Cliente {
 
@@ -13,18 +15,29 @@ public class Cliente {
 	private String phone;
 	private String email;
 
-	private Servicio[] servicios;
+	private List<Servicio> servicios;
 
-	public Cliente(String name, String id) {
+	public Cliente(Estado estado, String name, String id, String code, String direccion, String phone, String email) {
+		this.estado = estado;
 		this.name = name;
 		this.id = id;
+
+		this.code = code;
+		this.direccion = direccion;
+		this.phone = phone;
+		this.email = email;
+		servicios=new ArrayList<Servicio>();
 	}
 
-	public Servicio[] getServicios() {
+	public void addService(Servicio servicio){
+		servicios.add(servicio);
+	}
+
+	public List<Servicio> getServicios() {
 		return servicios;
 	}
 
-	public void setServicios(Servicio[] servicios) {
+	public void setServicios(List<Servicio> servicios) {
 		this.servicios = servicios;
 	}
 

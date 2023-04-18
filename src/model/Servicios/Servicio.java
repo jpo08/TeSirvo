@@ -57,4 +57,13 @@ public class Servicio {
 	public void setEstadoActivo(boolean estadoActivo) {
 		this.estadoActivo = estadoActivo;
 	}
+
+	@Override
+	public String toString() {
+		return  "codigoContrato='" + codigoContrato + '\'' +
+				", direccionInstalacion='" + direccionInstalacion + '\'' +
+				", fechaInstalacion=" + dateInstalacion +
+				", fehcaFacturacion=" + dateFactura +
+				", estado=" + estadoActivo;
+	}
 }

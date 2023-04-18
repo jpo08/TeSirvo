@@ -5,7 +5,7 @@ import java.util.List;
 
 public class EmpresaServicios implements Facturador{
 
-	ArrayList clientes = new ArrayList<Cliente>();
+	public ArrayList clientes = new ArrayList<Cliente>();
 
 	public void createService(String ts){
 
