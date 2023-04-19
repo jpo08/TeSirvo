@@ -49,6 +49,6 @@ public class GestionarServicio {
 
         System.out.println("Valor Contador Anterior");
         int contadorValuesPast=sc.nextInt();
-        cr.añadirServicio(id,serviceType, codicoCC,  direccionInstalacion,  dateInstalacion, dateFactura, estadoActivo, medidorCode,contadorValues,contadorValuesPast);
+        cr.anadirServicio(id,serviceType, codicoCC,  direccionInstalacion,  dateInstalacion, dateFactura, estadoActivo, medidorCode,contadorValues,contadorValuesPast);
     }
 }
