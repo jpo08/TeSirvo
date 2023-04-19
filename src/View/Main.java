@@ -2,6 +2,7 @@ package View;
 
 import Controller.CtrlCliente;
 
+import java.text.ParseException;
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +16,7 @@ public class Main {
         gestionarServicio = new GestionarServicio();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         String select = "";
         Main main = new Main();
         do{
@@ -32,7 +33,7 @@ public class Main {
         return select;
     }
 
-    public void menu(String select){
+    public void menu(String select) throws ParseException {
         switch (select){
 
             case "1":
