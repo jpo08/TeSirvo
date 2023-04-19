@@ -16,7 +16,7 @@ public class Main {
         gestionarServicio = new GestionarServicio();
     }
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args){
         String select = "";
         Main main = new Main();
         do{
@@ -27,13 +27,13 @@ public class Main {
     }
 
     public String options (){
-        System.out.println("Que accion desea hacer a continuacion:");
-        System.out.println("\nSeleccione una opcion:\n1.Agregar cliente\n2.Agregar servicio\n0.Exit\n");
+        System.out.println("¿Que accion desea hacer a continuacion?");
+        System.out.println("Seleccione una opcion:\n1.Gestionar cliente\n2.Gestionar servicio\n0.Exit\n");
         String select = sc.nextLine();
         return select;
     }
 
-    public void menu(String select) throws ParseException {
+    public void menu(String select){
         switch (select){
 
             case "1":
@@ -49,7 +49,7 @@ public class Main {
                 break;
 
             default:
-                System.out.println("¡Opcion no valida!");
+                System.out.println("\n¡Opcion no valida!\n");
                 break;
         }
     }
