@@ -7,7 +7,7 @@ public class PlanComercial extends Plan{
 
     ArrayList planesComerciales = new ArrayList<>();
 
-    public PlanComercial(double valorOfrecido, String id, String name, Date videnciaLower, Date getVidenciaUpper, boolean valorDeCapacidad) {
+    public PlanComercial(double valorOfrecido, String id, String name, Date videnciaLower, Date getVidenciaUpper, double valorDeCapacidad) {
         super(valorOfrecido, id, name, videnciaLower, getVidenciaUpper, valorDeCapacidad);
     }
 

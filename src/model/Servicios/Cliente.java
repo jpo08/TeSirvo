@@ -1,5 +1,7 @@
 package model.Servicios;
 
+import model.Planes.Plan;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,7 +20,7 @@ public class Cliente {
 	private List<Servicio> servicios;
 
 	public Cliente(int estado, String name, String id, String code, String direccion, String phone, String email) {
-
+		servicios = new ArrayList<>();
 		this.name = name;
 		this.id = id;
 
@@ -26,16 +28,10 @@ public class Cliente {
 		this.direccion = direccion;
 		this.phone = phone;
 		this.email = email;
-		servicios=new ArrayList<Servicio>();
 
-	}
-
-	public void addService(Servicio servicio){
-		servicios.add(servicio);
 	}
 
 	public void anadirServicio(String serviceType, String codigoContrato, String direccionInstalacion, Date dateInstalacion, Date dateFactura, boolean estadoActivo,String medidorCode, int contadorValues, int contadorValuesPast){
-
 		FactoryServices fabrica = new FactoryServices();
 		Servicio s = fabrica.getServicios(serviceType, codigoContrato, direccionInstalacion, dateInstalacion, dateFactura, estadoActivo, medidorCode,contadorValues,contadorValuesPast);
 		servicios.add(s);
@@ -113,4 +109,6 @@ public class Cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+
 }

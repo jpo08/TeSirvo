@@ -9,9 +9,9 @@ public class Plan {
     String name;
     Date videnciaLower;
     Date getVidenciaUpper;
-    boolean valorDeCapacidad;
+    double valorDeCapacidad;
 
-    public Plan(double valorOfrecido, String id, String name, Date videnciaLower, Date getVidenciaUpper, boolean valorDeCapacidad) {
+    public Plan(double valorOfrecido, String id, String name, Date videnciaLower, Date getVidenciaUpper, double valorDeCapacidad) {
         this.valorOfrecido = valorOfrecido;
         this.id = id;
         this.name = name;
@@ -60,11 +60,11 @@ public class Plan {
         this.getVidenciaUpper = getVidenciaUpper;
     }
 
-    public boolean isValorDeCapacidad() {
+    public double getValorDeCapacidad() {
         return valorDeCapacidad;
     }
 
-    public void setValorDeCapacidad(boolean valorDeCapacidad) {
+    public void setValorDeCapacidad(double valorDeCapacidad) {
         this.valorDeCapacidad = valorDeCapacidad;
     }
 }

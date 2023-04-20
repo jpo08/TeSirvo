@@ -1,8 +1,12 @@
 package model.Servicios;
 
+import model.Planes.Plan;
+
 import java.util.Date;
 
 public class Servicio {
+
+	private String planAsociado;
 
 	private String codigoContrato;
 	private String direccionInstalacion;
@@ -10,12 +14,21 @@ public class Servicio {
 	private Date dateFactura;
 	private boolean estadoActivo;
 
-	public Servicio(String codigoContrato, String direccionInstalacion, Date dateInstalacion, Date dateFactura, boolean estadoActivo) {
+	public Servicio(String codigoContrato, String direccionInstalacion, Date dateInstalacion, Date dateFactura, boolean estadoActivo, String planAsociado) {
 		this.codigoContrato = codigoContrato;
 		this.direccionInstalacion = direccionInstalacion;
 		this.dateInstalacion = dateInstalacion;
 		this.dateFactura = dateFactura;
 		this.estadoActivo = estadoActivo;
+		this.planAsociado = planAsociado;
+	}
+
+	public String getPlanAsociado() {
+		return planAsociado;
+	}
+
+	public void setPlanAsociado(String planAsociado) {
+		this.planAsociado = planAsociado;
 	}
 
 	public String getCodigoContrato() {

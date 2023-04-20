@@ -1,5 +1,7 @@
 package model.Servicios;
 
+import model.Planes.Plan;
+
 import java.util.Date;
 
 public class Medible extends Servicio {
@@ -8,8 +10,8 @@ public class Medible extends Servicio {
     int contadorValues;
     int contadorValuesPast;
 
-    public Medible(String codigoContrato, String direccionInstalacion, Date dateInstalacion, Date dateFactura, boolean estadoActivo, String medidorCode, int contadorValues, int contadorValuesPast) {
-        super(codigoContrato, direccionInstalacion, dateInstalacion, dateFactura, estadoActivo);
+    public Medible(String codigoContrato, String direccionInstalacion, Date dateInstalacion, Date dateFactura, boolean estadoActivo, String planAsociado, String medidorCode, int contadorValues, int contadorValuesPast) {
+        super(codigoContrato, direccionInstalacion, dateInstalacion, dateFactura, estadoActivo, planAsociado);
         this.medidorCode = medidorCode;
         this.contadorValues = contadorValues;
         this.contadorValuesPast = contadorValuesPast;
